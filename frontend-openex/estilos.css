@@ -1,0 +1,200 @@
+/* estilos.css */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1a1a2e;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar h1 {
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #00aaff;
+}
+
+/* Slider */
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+/* Video */
+.video {
+  padding: 2rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.video h2 {
+  margin-bottom: 1rem;
+  color: #1a1a2e;
+}
+
+/* Bienvenida */
+.bienvenida {
+  padding: 2rem;
+  background-color: #e0f7fa;
+  text-align: center;
+}
+
+.bienvenida h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00796b;
+}
+
+.bienvenida p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a2e;
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+footer .redes a {
+  color: #00aaff;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+footer .redes a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para el formulario de registro*/
+
+.formulario {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.formulario h2 {
+  margin-bottom: 1rem;
+  color: #1a1a2e;
+  text-align: center;
+}
+
+.formulario label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.formulario button {
+  margin-top: 1.5rem;
+  padding: 0.7rem 1.5rem;
+  background-color: #00796b;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.formulario button:hover {
+  background-color: #004d40;
+}
+
+/*Estilos para el CRUD*/
+
+.crud {
+  padding: 2rem;
+  background-color: #fff;
+  max-width: 900px;
+  margin: auto;
+}
+
+.crud h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #1a1a2e;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+table th {
+  background-color: #00796b;
+  color: #fff;
+}
+
+table td a {
+  color: #00796b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+table td a:hover {
+  text-decoration: underline;
+}
